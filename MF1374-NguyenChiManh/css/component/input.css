@@ -1,0 +1,26 @@
+.input{
+  background-color: #ffffff;
+  border-radius: 2.5px;
+  border: 1px solid #afafaf;
+  width: 179px;
+  height: 35px;
+  overflow: hidden;
+  outline: none;
+  padding-left: 50px;
+  
+}
+
+.input-icon{
+  background: url(../../assets/icon/qlts-icon.png) no-repeat -243px -23px;
+}
+
+.grid__option{
+background-color: #ffffff;
+border-radius: 2.5px;
+border: 1px solid #afafaf;
+width: 219px;
+height: 35px;
+overflow: hidden;
+margin-left: 11px;
+padding-left: 38px;
+}
