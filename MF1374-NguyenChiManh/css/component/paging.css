@@ -1,0 +1,26 @@
+.paging{
+    height: 39px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+}
+.paging .paging__left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 23%;
+}
+.paging .paging__left .current__page{
+ display: flex;
+ align-items: center;
+ position: relative;
+}
+
+.paging .paging__left .number__pages{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ width: 130px;
+}

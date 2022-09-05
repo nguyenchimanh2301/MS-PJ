@@ -34,8 +34,6 @@
                     <div class="sidebar__box--icon">
                         <div class="box__icon--chart"></div>
                     </div>
-
-                    
                  </div>
             </div>
         </div>
@@ -64,14 +62,30 @@
                                 <input type="text" class="input" placeholder="Tìm kiếm tài sản">
                             </div>
                             <div class="grid__option--feature">
-                                <select name="" id="" class="grid__option option__category">
+                                 <div class="grid__option-filter">
+                                      <div class="option__filter--icon icon__filter"></div>
+                                      <div class="option__filter--text">
+                                        <input type="text" placeholder="Loại tài sản">
+                                      </div>
+                                      <div class="option__filter--icon icon__dropdown"></div>
+                                 </div>
+                                 <div class="grid__option-filter">
+                                    <div class="grid__option-filter">
+                                        <div class="option__filter--icon icon__filter"></div>
+                                        <div class="option__filter--text">
+                                          <input type="text" placeholder="Bộ phận sử dụng">
+                                        </div>
+                                        <div class="option__filter--icon icon__dropdown"></div>
+                                   </div>
+                                 </div>
+                                <!-- <select name="" id="" class="grid__option option__category">
                                     <option value="">Loại tài sản</option>
                                     <option value=""></option>
-                                </select>
-                                <select name="" id="" class="grid__option option__position">
+                                </select> -->
+                                <!-- <select name="" id="" class="grid__option option__position">
                                     <option value="">Bộ phận sử dụng</option>
                                     <option value=""></option>
-                                </select>
+                                </select> -->
                             </div>
 
                         </div>
@@ -120,7 +134,30 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="paging">
+                        <div class="paging__left">
+                            <div class="total__page">Tổng số:<span>200 bản ghi</span></div>
+                            <div class="current__page">
+                                <input type="text" value="20" id="txtCurentPage">
+                                <div class="option__filter--icon icon__dropdown"></div>
+    
+                            </div>
+                            <div class="number__pages">
+                                <div class="page__previous"></div>
+                                <div class="page__number">
+                                    <button>1</button>
+                                    <button>2</button>
+                                    <button>...</button>
+                                    <button>10</button>
+                                </div>
+                                <div class="page__next"></div>
+                            </div>
+    
+                        </div>
+                        <div class="paging__right"></div>
+                                
                 </div>
+                
             </div>
         </div>
     </div>

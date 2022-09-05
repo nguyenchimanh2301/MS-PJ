@@ -2,6 +2,10 @@
 @import url(../css/component/icon.css);
 @import url(../css/component/input.css);
 @import url(../css/component/table.css);
+@import url(../css/component/paging.css);
+@import url(../css/component/popup.css);
+
+
 
 @import url(../css/layout/grid.css);
 @import url(../css/layout/header.css);
@@ -24,6 +28,8 @@
 } */
 .row{
     height: 100px;
+    display: flex;
+    flex-direction: column;
 }
 .contain{
     height: 100vh;

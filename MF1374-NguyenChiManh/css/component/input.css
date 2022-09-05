@@ -24,3 +24,20 @@ overflow: hidden;
 margin-left: 11px;
 padding-left: 38px;
 }
+.option__filter--text{
+  width: 164px;
+  margin-left: 8px;
+}
+.option__filter--text input{
+  font-size: 13px;
+  outline: none;
+  
+}
+#txtCurentPage{
+  background-color: #ffffff;
+border-radius: 2.625px;
+border: 1px solid #afafaf;
+width: 59px;
+height: 25px;
+overflow: hidden;
+}
