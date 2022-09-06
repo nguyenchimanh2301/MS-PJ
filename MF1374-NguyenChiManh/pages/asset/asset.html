@@ -6,34 +6,59 @@
     <meta name="viewport" content="width=ư, initial-scale=1.0">
     <title>Phần mềm quản lý tài sản MISA</title>
     <link rel="stylesheet" href="/css/main.css">
-     
 </head>
 <body>
     <div class="contain">
-        <div class="sidebar">
-            <div class="sidebar__box">
+        <div  id="sidebar" class="sidebar">
+            <div class="sidebar__box" >
                 <div class="sidebar__box-home ">
-                    <div class="box__icon--home"></div>
+                    <div class=" box__icon--home"></div>
+                    <div class="box__text">MISA QLTS</div>
                 </div>
                  <div class="sidebar__box--menu">
                     <div class="sidebar__box--icon">
-                        <div class="box__icon--router"></div>
+                        <div class="box__icon box__icon--router"></div>
+                        <div class="box__text">Tổng quan</div>
+                    </div> 
+                    <div class="sidebar__box--icon">
+                        <div class="box__icon box__icon--car"></div>
+                        <div class="box__text">Tài sản</div>
+                        <div class="menu__dropdown"></div>
+
                     </div>
                     <div class="sidebar__box--icon">
-                        <div class="box__icon--car"></div>
+                        <div class="box__icon box__icon--road"></div>
+                       <div class="box__text">Tài sản HT-DB</div>
+                       <div class="menu__dropdown"></div>
+
                     </div>
                     <div class="sidebar__box--icon">
-                        <div class="box__icon--road"></div>
+                        <div class="box__icon box__icon--icon"></div>
+                        <div class="box__text">Công cụ dụng cụ</div>
+                       <div class="menu__dropdown"></div>
+
                     </div>
                     <div class="sidebar__box--icon">
-                        <div class="box__icon--icon"></div>
+                        <div class="box__icon box__icon--book"></div>
+                        <div class="box__text">Danh mục</div>
+                        <div class="menu__dropdown"></div>
                     </div>
                     <div class="sidebar__box--icon">
-                        <div class="box__icon--search"></div>
+                        <div class="box__icon box__icon--search"></div>
+                        <div class="box__text">Tra cứu</div>
+                        <div class="menu__dropdown"></div>
                     </div>
                     <div class="sidebar__box--icon">
-                        <div class="box__icon--chart"></div>
+                        <div class="box__icon 
+                        box__icon--chart"></div>
+                    <div class="box__text">Báo cáo</div>
+                    
                     </div>
+                 </div>
+                 <div class="sidebar-tongle">
+                        <div id="sidebarToggle" class="sidebar__icon--tongle">
+                                
+                        </div>
                  </div>
             </div>
         </div>
@@ -56,9 +81,10 @@
 
             </div>
             <div class="grid">
-                <div class="grid__feature">
+                <div class="toolbar">
                         <div class="grid__feature--filter">
                             <div class="grid__input--feature">
+                                <div class="icon__search"></div>
                                 <input type="text" class="input" placeholder="Tìm kiếm tài sản">
                             </div>
                             <div class="grid__option--feature">
@@ -70,13 +96,11 @@
                                       <div class="option__filter--icon icon__dropdown"></div>
                                  </div>
                                  <div class="grid__option-filter">
-                                    <div class="grid__option-filter">
                                         <div class="option__filter--icon icon__filter"></div>
                                         <div class="option__filter--text">
                                           <input type="text" placeholder="Bộ phận sử dụng">
                                         </div>
                                         <div class="option__filter--icon icon__dropdown"></div>
-                                   </div>
                                  </div>
                                 <!-- <select name="" id="" class="grid__option option__category">
                                     <option value="">Loại tài sản</option>
@@ -90,7 +114,7 @@
 
                         </div>
                         <div class="grid__button--feature">
-                            <button class="btn">+ Thêm tài sản</button>
+                            <button class="btn btn__add" id="btnAdd">+ Thêm tài sản</button>
                              <div class="feature__box">
                                 <div class="feature__icon-export"></div>
                              </div>
@@ -103,21 +127,20 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th class="text-alain-center" ><input type="checkbox" name="" id=""></th>
+                                <th><input type="checkbox" name="" id=""></th>
                                 <th class="text-alain-center" >STT</th>
-                                <th class="text-alain-center" >Mã tài sản</th>
-                                <th class="text-alain-center" >Tên tài sản</th>
-                                <th class="text-alain-center" >Bộ phận sử dụng </th>
-                                <th class="text-alain-center" >Số lượng</th>
-                                <th class="text-alain-center" >Nguyên giá</th>
-                                <th class="text-alain-center" >HM/KH lũy kế</th>
-                                <th class="text-alain-center" >Giá trị còn lại</th>
+                                <th class="text-alain-left" >Mã tài sản</th>
+                                <th class="text-alain-left" >Tên tài sản</th>
+                                <th class="text-alain-left" >Bộ phận sử dụng </th>
+                                <th class="text-alain-right" >Số lượng</th>
+                                <th class="text-alain-right" >Nguyên giá</th>
+                                <th class="text-alain-right" >HM/KH lũy kế</th>
+                                <th class="text-alain-right" >Giá trị còn lại</th>
                                 <th class="text-alain-center" >Chức năng</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="text-alain-center">1</td>
+                                <!-- <td >1</td>
                                 <td class="text-alain-center">2</td>
                                 <td class="text-alain-center">3</td>
                                 <td class="text-alain-center">5</td>
@@ -126,21 +149,21 @@
                                 <td class="text-alain-center">14</td>
                                 <td class="text-alain-center">4</td>
                                 <td class="text-alain-center">4</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                                <td class="text-alain-center">
+                                    <button class="btn__pen"></button>
+                                    <button class="btn__td"></button>
+                                </td> -->
+                           
                         </tbody>
                     </table>
                     <div class="paging">
                         <div class="paging__left">
-                            <div class="total__page">Tổng số:<span>200 bản ghi</span></div>
+                            <div class="total__page">
+                                <div >Tổng số: <p>200 bản ghi</p> </div>
+                            </div>
                             <div class="current__page">
                                 <input type="text" value="20" id="txtCurentPage">
                                 <div class="option__filter--icon icon__dropdown"></div>
-    
                             </div>
                             <div class="number__pages">
                                 <div class="page__previous"></div>
@@ -155,11 +178,87 @@
     
                         </div>
                         <div class="paging__right"></div>
-                                
                 </div>
-                
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup__header">
+                    <div class="title">Sửa tài sản</div>
+                    <div class="popup__close"></div>
+            </div>
+            <div class="popup__contain">
+                    <div class="row">
+                        <label for="">Mã tài sản</label>
+                        <input type="text">
+                    </div>
+                    <div class="row">
+                        <label for="">Tên tài sản</label>
+                        <input type="text">
+                    </div>
+                    <div class="row">
+                        <label for="">Mã bộ phận sử dụng</label>
+                        <input type="text" placeholder="Chọn mã bộ phận sử dụng">
+                    </div>
+                    <div class="row">
+                        <label for="">Tên bộ phận sử dụng</label>
+                        <input type="text">
+                    </div>
+                    <div class="row">
+                        <label for="">Mã loại tài sản</label>
+                        <input type="text" placeholder="Chọn mã loại tài sản">
+                    </div>
+                    <div class="row">
+                        <label for="">Tên loại tài sản</label>
+                        <input type="text">
+                    </div>
+                    <div class="row">
+                        <label for="">Số lượng</label>
+                        <input type="text">
+                    </div>
+                    <div class="row">
+                         <div class="popup__grid">
+                        <div class="row">
+                            <label for="">Nguyên giá</label>
+                            <input type="text">
+                        </div>
+                        <div class="row">
+                            <label for="">Tỉ lệ hao mòn (%)</label>
+                            <input type="text">
+                        </div>
+                        <div class="row">
+                            <label for="">Ngày bắt đầu sử dụng</label>
+                            <input type="date">
+                        </div>
+                        <div class="row">
+                            <label for="">Năm theo dõi</label>
+                            <input type="date">
+                        </div>
+                        <div class="row">
+                            <label for="">Giá trị hao mòn năm</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <label for="">Ngày mua</label>
+                        <input type="date">
+                    </div>
+                    <div class="row">
+                    </div>
+                    <div class="row">
+                        <label for="">Số năm sử dụng</label>
+                        <input type="date">
+                    </div>
+                 </div> 
+            <div class="popup__footer">
+                <div class="popup__btn">
+                    <button class="btn__disable" id="btnDisable">HUỶ</button>
+                    <button class="btn">LƯU</button>
+                </div>
             </div>
         </div>
     </div>
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/pages/asset.js"></script>
 </body>
 </html>

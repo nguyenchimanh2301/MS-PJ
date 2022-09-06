@@ -5,14 +5,9 @@
 @import url(../css/component/paging.css);
 @import url(../css/component/popup.css);
 
-
-
 @import url(../css/layout/grid.css);
 @import url(../css/layout/header.css);
 @import url(../css/layout/sidebar.css);
-
-
-
 
 *{
     border: 0;
@@ -20,14 +15,12 @@
     box-sizing: border-box;
     margin: 0;
 }
-
-
 /* @font-face {
     font-family: ;
     src: url();
 } */
 .row{
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-direction: column;
 }
@@ -35,9 +28,23 @@
     height: 100vh;
     width: 100%;
     display: grid;
+    grid-template-columns: 225px auto;
+}
+.contain2{
+    height: 100vh;
+    width: 100%;
+    display: grid;
     grid-template-columns: 66px auto;
-  
+    transition: linear 2s;
 }
 .text-alain-center{
     text-align: center ;
+}
+.text-alain-right{
+    text-align: right ;
+
+}
+.text-alain-left{
+    text-align: left ;
+
 }

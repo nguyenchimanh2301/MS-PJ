@@ -19,12 +19,14 @@
     justify-content: space-around;
     align-items: center;
     /* width: 100%; */
+
 }
 
 .header .header__right .header-text{
     font-weight: 500;
     color: #001031;
-    margin-left: 27px;
+    margin-right: 26px;
+
 }
 
 .header .header__right .header-numberYear{
@@ -33,7 +35,7 @@
     width: 112px;
     height: 30px;
     overflow: hidden;
-    margin-left: 27px;
+    margin-right: 27px;
 }
 
 .header .header__right .header-numberYear input{

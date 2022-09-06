@@ -33,6 +33,14 @@ padding-left: 38px;
   outline: none;
   
 }
+.table th input:first-child{
+  height: 14px;
+  width: 14px;
+  margin-left: 13px;
+  box-sizing: border-box;
+}
+  
+
 #txtCurentPage{
   background-color: #ffffff;
 border-radius: 2.625px;

@@ -12,3 +12,12 @@ border: 1px solid #afafaf;
 box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
 overflow: hidden;
 }
+.table th,td{
+    height: 39px;
+    background-color: #ffffff;
+}
+
+.table th:first-child{
+ width: 42px;
+ text-align: left;
+}

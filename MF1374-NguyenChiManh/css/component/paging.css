@@ -3,15 +3,24 @@
     width: 100%;
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     bottom: 0px;
 }
 .paging .paging__left{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 23%;
+    flex: 2;
 }
+.paging .paging__left .total__page{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    font-size: 13px;
+    justify-content: space-around;
+   }
+   .paging .paging__left .total__page div{
+    display: flex;
+   }
 .paging .paging__left .current__page{
  display: flex;
  align-items: center;
@@ -24,3 +33,7 @@
  justify-content: space-around;
  width: 130px;
 }
+.paging .paging__right{
+    flex: 5;
+} 
+   
