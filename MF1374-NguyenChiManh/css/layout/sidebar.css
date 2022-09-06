@@ -42,6 +42,7 @@
   border-radius: 4px;
   margin-left: 10px;
   color: #ffffff;
+ 
 }
 .sidebar__box--icon:hover {
   background-color: #1aa4c8;
@@ -58,6 +59,7 @@
 .sidebar__box--icon .box__text {
   color: white;
   font-size: 13px;
+  opacity: 0.54;
 }
 
 .menu__dropdown {
@@ -67,13 +69,15 @@
   height: 7px;
   position: absolute;
   right: 10px;
+  opacity: 0.54;
+
 }
 .sidebar__box .sidebar-tongle{
    height: 50px;
    border-top: 1px solid  #ffffff;
    position: absolute;
    bottom: 0px;
-   /* background-color: #ffffff; */
+  
    width: 100%;
    display: flex;
    align-items: center;
@@ -87,4 +91,13 @@
   height: 22px;
   margin-right: 10px;
   border-radius: 4px;
+}
+.sidebar__box .sidebar-tongle .sidebar__tongle--open{
+  background-image: var(--background);
+  background-position:-285px -417px;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  border-radius: 4px;
+  display: none;
 }

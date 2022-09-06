@@ -1,6 +1,6 @@
 .paging{
     height: 39px;
-    width: 100%;
+    width: auto;
     display: flex;
     align-items: center;
     position: absolute;
@@ -26,6 +26,7 @@
  align-items: center;
  position: relative;
 }
+
 
 .paging .paging__left .number__pages{
  display: flex;

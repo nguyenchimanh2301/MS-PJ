@@ -4,13 +4,24 @@ $(document).ready(function () {
     $('#sidebarToggle').click(function(){
         $('.box__text').hide();
         $('.menu__dropdown').hide();
-        var element = document.querySelector('.contain');
+        var element = document.querySelector('.contains');
         element.classList.remove("contain");
-        // $(element).toggle();
         element.classList.add("contain2");
-        
+        $('#sidebarToggle').hide();
+        $('#sidebarToggleOpen').show();
     })
 
+    $('#sidebarToggleOpen').click(function(){
+       
+        var element = document.querySelector('.contains');
+        element.classList.remove("contain2");
+        element.classList.add("contain");
+        $('.box__text').show();
+        $('.menu__dropdown').show();
+        $('#sidebarToggle').show();
+        $('#sidebarToggleOpen').hide();
+
+    })
     $('#btnAdd').click(function(){
         $('#popup').show();
     });

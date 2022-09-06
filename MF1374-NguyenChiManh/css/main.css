@@ -4,11 +4,13 @@
 @import url(../css/component/table.css);
 @import url(../css/component/paging.css);
 @import url(../css/component/popup.css);
+@import url(../css/component/toast.css);
 
 @import url(../css/layout/grid.css);
 @import url(../css/layout/header.css);
 @import url(../css/layout/sidebar.css);
 
+@import url(../assets/fontawesome-5.15.1/css/all.min.css);
 *{
     border: 0;
     padding: 0;
@@ -32,7 +34,6 @@
 }
 .contain2{
     height: 100vh;
-    width: 100%;
     display: grid;
     grid-template-columns: 66px auto;
     transition: linear 2s;
