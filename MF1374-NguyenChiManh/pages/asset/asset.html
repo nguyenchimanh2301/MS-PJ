@@ -24,7 +24,6 @@
                         <div class="box__icon box__icon--car"></div>
                         <div class="box__text">Tài sản</div>
                         <div class="menu__dropdown"></div>
-
                     </div>
                     <div class="sidebar__box--icon">
                         <div class="box__icon box__icon--road"></div>
@@ -41,7 +40,6 @@
                     <div class="sidebar__box--icon">
                         <div class="box__icon box__icon--book"></div>
                         <div class="box__text">Danh mục</div>
-                        <div class="menu__dropdown"></div>
                     </div>
                     <div class="sidebar__box--icon">
                         <div class="box__icon box__icon--search"></div>
@@ -70,7 +68,7 @@
                       <div class="header-text">Sở tài chính</div>
                       <div class="header-numberYear">
                         <input type="text" name="" id="" value="Năm 2021">
-                        <div class="icon__dropdown"></div>
+                        <div class="icon__up"></div>
                       </div>
                       <div class="header-icon">
                           <div class="header__icon icon--bell"></div>
@@ -155,32 +153,42 @@
                                     <button class="btn__td"></button>
                                 </td> -->
                         </tbody>
+                        
                     </table>
+                    <div class="paging">
+                        <div class="paging__left">
+                            <div class="total__page">
+                                <div >Tổng số: <p>200 bản ghi</p> </div>
+                            </div>
+                            <div class="current__page">
+                                <input type="text" value="20" id="txtCurentPage">
+                                <div class="option__filter--icon icon__dropdown"></div>
+                            </div>
+                            <div class="number__pages">
+                                <div class="page__previous"></div>
+                                <div class="page__number">
+                                    <button>1</button>
+                                    <button>2</button>
+                                    <button>...</button>
+                                    <button>10</button>
+                                </div>
+                                <div class="page__next"></div>
+                            </div>
+            
+                        </div>
+                        <div class="paging__right">
+                            <div class="paging__right--quantity text-alain-right">13</div>
+                            <div class="paging__right--price text-alain-right">249.000.000</div>
+                            <div class="paging__right--accumulated text-alain-right">19.716.000</div>
+                            <div class="paging__right--value text-alain-right">229.284.000</div>
+                            <div class="paging__right--feature"></div>
+
+                        </div>
+                </div>
             </div>
         </div>
-        <div class="paging">
-            <div class="paging__left">
-                <div class="total__page">
-                    <div >Tổng số: <p>200 bản ghi</p> </div>
-                </div>
-                <div class="current__page">
-                    <input type="text" value="20" id="txtCurentPage">
-                    <div class="option__filter--icon icon__dropdown"></div>
-                </div>
-                <div class="number__pages">
-                    <div class="page__previous"></div>
-                    <div class="page__number">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>...</button>
-                        <button>10</button>
-                    </div>
-                    <div class="page__next"></div>
-                </div>
-
-            </div>
-            <div class="paging__right"></div>
-    </div>
+        
+       <div class="m-popup">
         <div class="popup" id="popup">
             <div class="popup__header">
                     <div class="title">Sửa tài sản</div>
@@ -198,6 +206,7 @@
                     <div class="row">
                         <label for="">Mã bộ phận sử dụng</label>
                         <input type="text" placeholder="Chọn mã bộ phận sử dụng">
+                        <div class="icon__dropdown"></div>
                     </div>
                     <div class="row">
                         <label for="">Tên bộ phận sử dụng</label>
@@ -206,6 +215,8 @@
                     <div class="row">
                         <label for="">Mã loại tài sản</label>
                         <input type="text" placeholder="Chọn mã loại tài sản">
+                        <div class="icon__dropdown"></div>
+
                     </div>
                     <div class="row">
                         <label for="">Tên loại tài sản</label>
@@ -214,6 +225,8 @@
                     <div class="row">
                         <label for="">Số lượng</label>
                         <input type="text">
+                        <div class="icon__up"></div>
+
                     </div>
                     <div class="row">
                          <div class="popup__grid">
@@ -224,6 +237,7 @@
                         <div class="row">
                             <label for="">Tỉ lệ hao mòn (%)</label>
                             <input type="text">
+                        <div class="icon__up"></div>
                         </div>
                         <div class="row">
                             <label for="">Ngày bắt đầu sử dụng</label>
@@ -231,7 +245,7 @@
                         </div>
                         <div class="row">
                             <label for="">Năm theo dõi</label>
-                            <input type="date">
+                            <input type="text">
                         </div>
                         <div class="row">
                             <label for="">Giá trị hao mòn năm</label>
@@ -258,6 +272,7 @@
             </div>
         </div>
     </div>
+       </div>
     <script src="../../js/jquery-3.4.1.min.js"></script>
     <script src="../../js/pages/asset.js"></script>
 </body>

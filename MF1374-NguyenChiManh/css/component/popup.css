@@ -1,14 +1,24 @@
+.m-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
 .popup{
     position: relative;
-    top: -50%;
-    left: 20%;
+    top: 10%;
+    left: 30%;
     width: 800px;
     height: 650px;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     /* background-color: rebeccapurple; */ 
-    display: none;
     z-index: 1000;
 }
 .popup__header{
@@ -48,7 +58,25 @@
 .row label{
     margin-bottom: 8px;
 }
-
+.popup__contain .row{
+    position: relative;
+}
+.popup__contain .row .icon__dropdown{
+ background-image: var(--background);
+ position: absolute;
+ top: 50%;
+ right: 0px;
+}
+.popup__contain .row .icon__up{
+    background-image: var(--background);
+    background-position: -204px -332px;
+    width: 8px;
+    height: 16px;
+    top: 45%;
+    right: 12px;
+    position: absolute;
+ }
+   
 .popup__contain .row input{
     height: 36px;
     width: 100%;
@@ -75,6 +103,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    background-color: #bdb6b6fe;
 }
 .popup .popup__footer .popup__btn{
     float: right;

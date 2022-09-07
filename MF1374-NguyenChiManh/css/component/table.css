@@ -1,12 +1,10 @@
-.grid__table{
-    width: 100%;
 
-}
 .table{
     width: 100%;
     border-collapse: collapse;
     border: 1px solid #afafaf;
-box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
+    margin-right: 20px;
 }
 
 .table tbody{

@@ -10,9 +10,10 @@ $(document).ready(function () {
         $('#sidebarToggle').hide();
         $('#sidebarToggleOpen').show();
     })
+     
 
     $('#sidebarToggleOpen').click(function(){
-       
+        
         var element = document.querySelector('.contains');
         element.classList.remove("contain2");
         element.classList.add("contain");
@@ -23,11 +24,11 @@ $(document).ready(function () {
 
     })
     $('#btnAdd').click(function(){
-        $('#popup').show();
+        $('.m-popup').show();
     });
 
     $('#btnDisable').click(function(){
-        $('#popup').hide();
+        $('.m-popup').hide();
     });
    
 });
