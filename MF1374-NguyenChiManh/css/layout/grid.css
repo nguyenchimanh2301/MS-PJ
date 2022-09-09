@@ -1,12 +1,23 @@
 .grid{
-    height: 80vh;
+    height: calc(961px - 44px);
     width: 100%;
     background-color: #f4f7ff;
+    position: relative;
+}
+.fixed{
+   position: fixed;
+   top: 0px;
+   height: 40px;
+   background-color: rebeccapurple;
+   width: 100%;
 }
 .grid__table{
     width: 100%;
-    padding: 50px 20px 0px 20px;
+    margin-top: 25px;
+    padding: 0px 14px 0px 20px;
     position: relative;
+    height: 833px;
+     overflow: scroll;
 }
 .toolbar{
     height: 36px;
@@ -15,6 +26,7 @@
     padding: 27px 20px 0px  20px;
     position: relative;
 }
+
 .grid__input--feature .icon__search
 {
   background-image: var(--background);
@@ -53,7 +65,6 @@ width: 639px;
     border-radius: 3px;
     width: 36px;
     height: 36px;
-    overflow: hidden;
     justify-content: space-around;
 }
 .grid__option--feature{

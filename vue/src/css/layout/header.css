@@ -1,0 +1,77 @@
+.header{
+    
+    height: 44px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+
+}
+.header .header-title{
+    margin-left:20px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.header .header__right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .header__right .header-text{
+    font-weight: 500;
+    color: #001031;
+    margin-right: 26px;
+}
+
+.header .header__right .header-numberYear{
+    background-color: rgba(26, 164, 200, .2);
+    border-radius: 3px;
+    width: 112px;
+    height: 30px;
+    overflow: hidden;
+    margin-right: 27px;
+    position: relative;
+}
+
+.header .header__right .header-numberYear input{
+    background-color: rgba(26, 164, 200, .2);
+    border-radius: 3px;
+    width: 112px;
+    height: 30px;
+    overflow: hidden;
+    margin-right: 31px;
+    padding-left: 11px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.header-numberYear .icon__dropdown{
+    background-image: var(--background);
+    position: absolute;
+    background-position: -72px -338px;
+    width: 8px;
+    height: 5px;
+    bottom: 0;
+    right: 0;
+}
+.header-numberYear .icon__up{
+    background-image: var(--background);
+    position: absolute;
+    background-position: -204px -332px;
+    width: 8px;
+    height: 16px;
+    top: 8px;
+    right: 10px;
+}
+.header .header__right .header-icon{
+    display: flex;
+    align-items: center;
+    width: 200px;
+
+}
+.header__icon {
+    margin-right: 20px;
+}

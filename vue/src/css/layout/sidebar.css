@@ -1,0 +1,112 @@
+.sidebar {
+  display: flex;
+  background-color: #1c3048;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
+  width: 225px;
+  height: 100%;
+  transition: linear 0.5s;
+}
+.sidebar__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+.sidebar__box-home {
+  height: 50px;
+  float: left;
+  padding-left: 13px;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+}
+.sidebar__box-home .box__text{
+    padding-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.sidebar__box--menu {
+  margin-top: 15px;
+  width: 100%;
+}
+.box__icon {
+  height: 40px;
+  width: 40px;
+}
+.sidebar__box--icon {
+  height: 40px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+  margin-left: 10px;
+  color: #ffffff;
+ 
+}
+.sidebar__box--icon:hover {
+  background-color: #1aa4c8;
+}
+
+.active{
+  background-color: #1aa4c8;
+}
+
+.box__icon:nth-child(2) {
+  border-radius: 6px;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  
+}
+
+.sidebar__box--icon .box__text {
+  color: white;
+  font-size: 13px;
+  opacity: 0.54;
+}
+
+.menu__dropdown {
+  background-image: var(--background);
+  background-position: -158px -293px;
+  width: 11px;
+  height: 7px;
+  position: absolute;
+  right: 0px;
+  opacity: 0.54;
+
+}
+.sidebar__box .sidebar-tongle{
+   height: 50px;
+   border-top: 1px solid  #ffffff;
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+
+.sidebar__box .sidebar-tongle .sidebar__icon--tongle{
+  background-image: var(--background);
+  background-position:-285px -417px;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  border-radius: 4px;
+  position: relative;
+}
+.sidebar__box .sidebar-tongle .sidebar__tongle--open{
+  background-image: var(--background);
+  background-position:-329px -417px;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+/* .sidebar__tongle--open:active .contain{
+  display: grid;
+} */

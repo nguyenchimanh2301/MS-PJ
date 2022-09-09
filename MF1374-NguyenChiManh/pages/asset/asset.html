@@ -55,8 +55,10 @@
                  </div>
                  <div class="sidebar-tongle">
                         <div id="sidebarToggle" class="sidebar__icon--tongle">
+                            <div class="tooltip">Thu gọn</div>
                         </div>
                         <div id="sidebarToggleOpen" class="sidebar__tongle--open">
+                            <div id="opensidebar" class="tooltip ">Mở rộng</div>
                         </div>
                  </div>
             </div>
@@ -115,10 +117,14 @@
                         <div class="grid__button--feature">
                             <button class="btn btn__add" id="btnAdd">+ Thêm tài sản</button>
                              <div class="feature__box">
-                                <div class="feature__icon-export"></div>
+                                <div class="feature__icon-export">
+                                    <div class="tooltip tooltip__export">Xuất</div>
+                                </div>
                              </div>
                              <div class="feature__box">
-                               <div class="feature__icon-delete"></div>
+                               <div class="feature__icon-delete">
+                                 <div class="tooltip tooltip__delete">Xóa</div>
+                               </div>
                              </div>
                         </div>
                 </div>
@@ -126,8 +132,8 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th><input type="checkbox" name="" id=""></th>
-                                <th class="text-alain-center" >STT</th>
+                                <th class="text-alain-center"><input type="checkbox" name="" id=""></th>
+                                <th class="text-alain-left" >STT</th>
                                 <th class="text-alain-left" >Mã tài sản</th>
                                 <th class="text-alain-left" >Tên tài sản</th>
                                 <th class="text-alain-left" >Bộ phận sử dụng </th>
@@ -153,41 +159,55 @@
                                     <button class="btn__td"></button>
                                 </td> -->
                         </tbody>
-                        
+                        <!-- <tfoot >
+                           <tr>
+                            <td class="text-alain-center"><input type="checkbox" name="" id=""></td>
+                            <td class="text-alain-center" >STT</td>
+                            <td class="text-alain-left" >Mã tài sản</td>
+                            <td class="text-alain-left" >Tên tài sản</td>
+                            <td class="text-alain-left" >Bộ phận sử dụng </td>
+                            <td class="text-alain-right" >Số lượng</td>
+                            <td class="text-alain-right" >Nguyên giá</td>
+                            <td class="text-alain-right" >HM/KH lũy kế</td>
+                            <td class="text-alain-right" >Giá trị còn lại</td>
+                            <td class="text-alain-center" >Chức năng</td>
+                           </td>
+                        </tfoot> -->
                     </table>
-                    <div class="paging">
-                        <div class="paging__left">
-                            <div class="total__page">
-                                <div >Tổng số: <p>200 bản ghi</p> </div>
-                            </div>
-                            <div class="current__page">
-                                <input type="text" value="20" id="txtCurentPage">
-                                <div class="option__filter--icon icon__dropdown"></div>
-                            </div>
-                            <div class="number__pages">
-                                <div class="page__previous"></div>
-                                <div class="page__number">
-                                    <button>1</button>
-                                    <button>2</button>
-                                    <button>...</button>
-                                    <button>10</button>
-                                </div>
-                                <div class="page__next"></div>
-                            </div>
-            
-                        </div>
-                        <div class="paging__right">
-                            <div class="paging__right--quantity text-alain-right">13</div>
-                            <div class="paging__right--price text-alain-right">249.000.000</div>
-                            <div class="paging__right--accumulated text-alain-right">19.716.000</div>
-                            <div class="paging__right--value text-alain-right">229.284.000</div>
-                            <div class="paging__right--feature"></div>
-
-                        </div>
-                </div>
             </div>
-        </div>
+            <div class="paging">
+                <div class="paging__left">
+                    <div class="total__page">
+                        <div >Tổng số: <p>200 bản ghi</p> </div>
+                    </div>
+                    <div class="current__page">
+                        <input type="text" value="20" id="txtCurentPage">
+                        <div class="option__filter--icon icon__dropdown"></div>
+                    </div>
+                    <div class="number__pages">
+                        <div class="page__previous"></div>
+                        <div class="page__number">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>...</button>
+                            <button>10</button>
+                        </div>
+                        <div class="page__next"></div>
+                    </div>
         
+                </div>
+                <div class="paging__right">
+                    <div class="paging__right--quantity text-alain-right">13</div>
+                    <div class="paging__right--price text-alain-right">249.000.000</div>
+                    <div class="paging__right--accumulated text-alain-right">19.716.000</div>
+                    <div class="paging__right--value text-alain-right">229.284.000</div>
+                    <div class="paging__right--feature"></div>
+        
+                </div>
+        </div>
+            
+        </div>
+       
        <div class="m-popup">
         <div class="popup" id="popup">
             <div class="popup__header">
@@ -196,15 +216,15 @@
             </div>
             <div class="popup__contain">
                     <div class="row">
-                        <label for="">Mã tài sản</label>
+                         <label for="">Mã tài sản <span>*</span></label>
                         <input type="text">
                     </div>
                     <div class="row">
-                        <label for="">Tên tài sản</label>
-                        <input type="text">
+                        <label for="">Tên tài sản <span>*</span></label>
+                        <input type="text" placeholder="nhập tên tài sản">
                     </div>
                     <div class="row">
-                        <label for="">Mã bộ phận sử dụng</label>
+                        <label for="">Mã bộ phận sử dụng <span>*</span></label>
                         <input type="text" placeholder="Chọn mã bộ phận sử dụng">
                         <div class="icon__dropdown"></div>
                     </div>
@@ -213,7 +233,7 @@
                         <input type="text">
                     </div>
                     <div class="row">
-                        <label for="">Mã loại tài sản</label>
+                        <label for="">Mã loại tài sản <span>*</span></label>
                         <input type="text" placeholder="Chọn mã loại tài sản">
                         <div class="icon__dropdown"></div>
 
@@ -223,7 +243,7 @@
                         <input type="text">
                     </div>
                     <div class="row">
-                        <label for="">Số lượng</label>
+                        <label for="">Số lượng <span>*</span></label>
                         <input type="text">
                         <div class="icon__up"></div>
 
@@ -231,16 +251,16 @@
                     <div class="row">
                          <div class="popup__grid">
                         <div class="row">
-                            <label for="">Nguyên giá</label>
+                            <label for="">Nguyên giá <span>*</span></label>
                             <input type="text">
                         </div>
                         <div class="row">
-                            <label for="">Tỉ lệ hao mòn (%)</label>
+                            <label for="">Tỉ lệ hao mòn (%) <span>*</span></label>
                             <input type="text">
                         <div class="icon__up"></div>
                         </div>
                         <div class="row">
-                            <label for="">Ngày bắt đầu sử dụng</label>
+                            <label for="">Ngày bắt đầu sử dụng <span>*</span></label>
                             <input type="date">
                         </div>
                         <div class="row">
@@ -248,19 +268,19 @@
                             <input type="text">
                         </div>
                         <div class="row">
-                            <label for="">Giá trị hao mòn năm</label>
+                            <label for="">Giá trị hao mòn năm <span>*</span></label>
                             <input type="text">
                         </div>
                     </div>
                     </div>
                     <div class="row">
-                        <label for="">Ngày mua</label>
+                        <label for="">Ngày mua <span>*</span></label>
                         <input type="date">
                     </div>
                     <div class="row">
                     </div>
                     <div class="row">
-                        <label for="">Số năm sử dụng</label>
+                        <label for="">Số năm sử dụng <span>*</span></label>
                         <input type="date">
                     </div>
                  </div> 
@@ -273,6 +293,11 @@
         </div>
     </div>
        </div>
+
+
+
+
+    </div>
     <script src="../../js/jquery-3.4.1.min.js"></script>
     <script src="../../js/pages/asset.js"></script>
 </body>

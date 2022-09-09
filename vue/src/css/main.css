@@ -1,0 +1,104 @@
+@import url(../css/component/input.css);
+@import url(../css/component/table.css);
+@import url(../css/component/paging.css);
+@import url(../css/component/popup.css);
+@import url(../css/component/toast.css);
+@import url(../css/component/tooltip.css);
+@import url(../css/component/icon.css);
+@import url(../css/component/button.css);
+@import url(../css/component/content.css);
+
+@import url(../css/layout/grid.css);
+@import url(../css/layout/header.css);
+@import url(../css/layout/sidebar.css);
+
+@import url(../assets/fontawesome-5.15.1/css/all.min.css);
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'MISA';
+}
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+@font-face {
+    font-family:'MISA';
+    src: url(../assets/font/Roboto-Regular.ttf);
+}
+.row{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.contain{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.contain2{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 66px auto;
+    transition: linear 2s;
+}
+.text-alain-center{
+    text-align: center ;
+}
+.text-alain-right{
+    text-align: right ;
+
+}
+.text-alain-left{
+    text-align: left ;
+
+}
+
+::-webkit-scrollbar {
+    width:6px;
+    border-radius: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(133, 133, 133); 
+  } 
+  
+
+/* 
+  @media only screen and (min-width: 1024px) {
+   
+   
+   .contain{
+     height: 1060px;
+     overflow: hidden;
+   }
+   .grid{
+    height: 1041px;
+   }
+   .grid__table{
+    width: 100%;
+    margin-top: 25px;
+    padding: 0px 14px 0px 20px;
+    position: relative;
+    height: 961px;
+    overflow: scroll;
+    background-color: aqua;
+    height: 1067;
+   }
+  } */
+
+  :root {
+    --background: url(../assets/icon/qlts-icon.png);
+  }
+  
+  

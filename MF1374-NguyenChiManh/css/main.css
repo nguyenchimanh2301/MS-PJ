@@ -5,6 +5,7 @@
 @import url(../css/component/paging.css);
 @import url(../css/component/popup.css);
 @import url(../css/component/toast.css);
+@import url(../css/component/tooltip.css);
 
 @import url(../css/layout/grid.css);
 @import url(../css/layout/header.css);
@@ -16,11 +17,16 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    font-family: 'MISA';
 }
 /* @font-face {
     font-family: ;
     src: url();
 } */
+@font-face {
+    font-family:'MISA';
+    src: url(../assets/font/Roboto-Regular.ttf);
+}
 .row{
     height: 80px;
     display: flex;
@@ -49,3 +55,41 @@
     text-align: left ;
 
 }
+
+::-webkit-scrollbar {
+    width:6px;
+    border-radius: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(133, 133, 133); 
+  } 
+  
+
+
+  @media only screen and (max-width: 1024px) {
+    .body{
+        height: 961px;
+        overflow: hidden;
+      }
+   .contain{
+     height: 961px;
+     overflow: hidden;
+   }
+  
+   .grid__table{
+    width: 100%;
+    margin-top: 25px;
+    padding: 0px 14px 0px 20px;
+    position: relative;
+    height: 833px;
+    overflow: scroll;
+    background-color: aqua;
+}
+  }

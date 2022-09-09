@@ -1,15 +1,18 @@
 .paging{
-    height: 39px;
+    height: 40px;
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     border: 1px solid #afafaf;
-    width: calc(100% - 40px);
+    margin-left: 20px;
+    width: 97.65%;
+    /* margin: 0px 20px 0px 20px; */
     background-color: #ffffff;
-box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
-
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
 }
+
+
 .paging .paging__left{
     display: flex;
     align-items: center;
@@ -57,7 +60,7 @@ box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
 .paging .paging__right div{
     font-size: 13;
     font-weight: 700;
-} 
+}  
 .paging .paging__right  .paging__right--quantity{
     flex: 2;
 }

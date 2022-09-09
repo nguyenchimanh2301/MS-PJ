@@ -3,7 +3,7 @@
   background-color: #1c3048;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
   max-width: 225px;
-  height: 100vh;
+  height: 961px;
 }
 .sidebar__box {
   width: 225px;
@@ -94,6 +94,7 @@
   height: 22px;
   margin-right: 10px;
   border-radius: 4px;
+  position: relative;
 }
 .sidebar__box .sidebar-tongle .sidebar__tongle--open{
   background-image: var(--background);
@@ -103,4 +104,9 @@
   margin-right: 10px;
   border-radius: 4px;
   display: none;
+  position: relative;
 }
+
+/* .sidebar__tongle--open:active .contain{
+  display: grid;
+} */

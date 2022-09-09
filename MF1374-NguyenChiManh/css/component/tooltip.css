@@ -1,0 +1,35 @@
+.tooltip{
+    width: 40px;
+    height: 20px;
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+}
+.feature__icon-delete:hover .tooltip{
+    display: block;
+    position: absolute;
+    left:-10px;
+    top: -25px;
+}
+.feature__icon-export:hover .tooltip{
+    display: block;
+    position: absolute;
+    left:-10px;
+    top: -25px;
+}
+.sidebar__icon--tongle:hover .tooltip{
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: -25px;
+    width: 60px;
+}
+.sidebar__tongle--open:hover .tooltip{
+    display: block;
+    position: absolute;
+    left:-30px;
+    top: -25px;
+    width: 60px;
+}

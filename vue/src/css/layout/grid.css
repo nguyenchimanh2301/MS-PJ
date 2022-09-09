@@ -1,0 +1,78 @@
+.grid{
+    width: 100%;
+    background-color: #f4f7ff;
+    position: relative;
+}
+
+.grid__table{
+    width: 100%;
+    margin-top: 25px;
+    padding: 0px 14px 0px 20px;
+    position: relative;
+    height: 820px;
+     overflow-y: scroll;
+}
+.toolbar{
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 20px 0px  20px;
+    position: relative;
+}
+
+.grid__input--feature .icon__search
+{
+  background-image: var(--background);
+  background-position: -243px -23px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 22px;
+  left: 30px;
+}
+
+.input:placeholder-shown{
+    font-style: italic;
+ }
+
+.toolbar .grid__button--feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 203px;
+}
+.grid__feature--filter{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 639px;
+
+}
+.grid__option--feature .grid__option-filter:hover{
+    border-color: blue;
+}
+.grid__button--feature .feature__box{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 3px;
+    width: 36px;
+    height: 36px;
+    justify-content: space-around;
+}
+.grid__option--feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 449px;
+}
+.grid__option--feature .grid__option-filter{
+background-color: #ffffff;
+border-radius: 2.5px;
+border: 1px solid #afafaf;
+width: 219px;
+height: 35px;
+overflow: hidden;
+display: flex;
+align-items: center;
+}
