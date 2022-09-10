@@ -13,19 +13,18 @@
                     <div class="sidebar__box--icon">
                         <div class="box__icon box__icon--car"></div>
                         <div class="box__text">Tài sản</div>
-                        <div class="menu__dropdown"></div>
+                        <div class="menu__dropdown" v-if="isCollapse"></div>
                     </div>
                     <div class="sidebar__box--icon">
                         <div class="box__icon box__icon--road"></div>
                        <div class="box__text">Tài sản HT-DB</div>
-                       <div class="menu__dropdown"></div>
+                       <div class="menu__dropdown" v-if="isCollapse"></div>
 
                     </div>
                     <div class="sidebar__box--icon">
                         <div class="box__icon box__icon--icon"></div>
                         <div class="box__text">Công cụ dụng cụ</div>
-                       <div class="menu__dropdown"></div>
-
+                        <div class="menu__dropdown" v-if="isCollapse"></div>
                     </div>
                     <div class="sidebar__box--icon">
                         <div class="box__icon box__icon--book"></div>
@@ -34,7 +33,7 @@
                     <div class="sidebar__box--icon">
                         <div class="box__icon box__icon--search"></div>
                         <div class="box__text">Tra cứu</div>
-                        <div class="menu__dropdown"></div>
+                        <div class="menu__dropdown" v-if="isCollapse"></div>
                     </div>
                     <div class="sidebar__box--icon">
                         <div class="box__icon 
@@ -63,11 +62,11 @@
             var arr = Array.from(document.querySelectorAll(".box__text"));
             arr.map((item)=>{
                  item.style.display ='none';
-            })
+            });
             this.collapse(false);
         },
         openSidebar(){
-            document.getElementById("sidebar").style.width = "240px";
+            document.getElementById("sidebar").style.width = "250px";
             var arr = Array.from(document.querySelectorAll(".box__text"));
             arr.map((item)=>{
                  item.style.display ='block';

@@ -59,7 +59,7 @@
                         <tbody>
            
           
-            <tr v-for="item in data" :key="item">
+            <tr v-for="item in data" :key="item " @dblclick="employeeSelected(item)">
             <td class="text-alain-center"><input type="checkbox" name="" id=""></td>
             <td class="text-alain-left">1</td>
             <td class="text-alain-left">{{item.CustomerGroupId}}</td>
@@ -95,7 +95,7 @@
         </div>
        </div>
     <MPaging/>
-    <MPopup :isShow="isShowPopup"  @isShowPopup ="showPopup" />
+    <MPopup :isShow="isShowPopup"  @isShowPopup ="showPopup" :employeeSelected="employee"/>
     </div>
 
 </template>
@@ -124,13 +124,17 @@ methods: {
     },
     showPopup(isShow){
          this.isShowPopup = isShow;
+    },
+    employeeSelected(item){
+       this.showPopup(true);
+       this.employee = item;
     }
-
 },
 data() {
     return {
         isShowPopup : false,
         data : [],
+        employee:{},
     }
 },
 }

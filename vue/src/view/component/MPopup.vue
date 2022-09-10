@@ -8,8 +8,8 @@
             </div>
             <div class="popup__contain">
                     <div class="row">
-                         <label for="">Mã tài sản <span>*</span></label>
-                        <input type="text">
+                         <label for="">Mã tài sản<span>*</span></label>
+                        <input type="text" v-model="employeeSelect.CustomerGroupId">
                     </div>
                     <div class="row">
                         <label for="">Tên tài sản <span>*</span></label>
@@ -78,7 +78,7 @@
                  </div> 
             <div class="popup__footer">
                 <div class="popup__btn">
-                    <button class="btn__disable" id="btnDisable"  @click="btnClosePopup">HUỶ</button>
+                    <button class="btn__disable" id="btnDisable" @click="btnClosePopup">HUỶ</button>
                     <button class="btn">LƯU</button>
                 </div>
             </div>
@@ -92,15 +92,21 @@
     name :"MPopup",
     components:{
 },
+props:["isShow","employeeSelected"],
+watch:{
+    employeeSelected:function(employee){
+        this.employeeSelect = employee;
+    }
+},
 methods: {
     btnClosePopup(){
         this.$emit("isShowPopup",false);
     }
 },
-props:["isShow"],
 data() {
     return {
         isShowPopup : false,
+        employeeSelect:{}
     }
 },
 }
