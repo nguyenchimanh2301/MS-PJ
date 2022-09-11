@@ -3,7 +3,7 @@
         <div class="m-popup" v-bind:class="{isShowPopup:isShow}">
         <div class="popup" id="popup">
             <div class="popup__header">
-                    <div class="title">Sửa tài sản</div>
+                    <div class="title"> tài sản</div>
                     <div class="popup__close" @click="btnClosePopup"></div>
             </div>
             <div class="popup__contain">
@@ -28,7 +28,6 @@
                         <label for="">Mã loại tài sản <span>*</span></label>
                         <input type="text" placeholder="Chọn mã loại tài sản">
                         <div class="icon__dropdown"></div>
-
                     </div>
                     <div class="row">
                         <label for="">Tên loại tài sản</label>
@@ -38,7 +37,6 @@
                         <label for="">Số lượng <span>*</span></label>
                         <input type="text">
                         <div class="icon__up"></div>
-
                     </div>
                     <div class="row">
                          <div class="popup__grid">
@@ -98,6 +96,7 @@ watch:{
         this.employeeSelect = employee;
     }
 },
+
 methods: {
     btnClosePopup(){
         this.$emit("isShowPopup",false);
@@ -106,7 +105,7 @@ methods: {
 data() {
     return {
         isShowPopup : false,
-        employeeSelect:{}
+        employeeSelect:{},
     }
 },
 }

@@ -66,7 +66,7 @@
             this.collapse(false);
         },
         openSidebar(){
-            document.getElementById("sidebar").style.width = "250px";
+            document.getElementById("sidebar").style.width = "300px";
             var arr = Array.from(document.querySelectorAll(".box__text"));
             arr.map((item)=>{
                  item.style.display ='block';

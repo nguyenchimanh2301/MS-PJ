@@ -61,3 +61,9 @@ overflow: hidden;
 .table th:nth-child(2){
     width: 42px;
 }
+
+tfoot tr {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0px;
+}

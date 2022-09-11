@@ -6,32 +6,31 @@
     position: sticky;
     bottom: 0px;
     border: 1px solid #afafaf;
-    margin-left: 20px;
-    width: 97.65%;
-    /* margin: 0px 20px 0px 20px; */
+    width: 100%;
+ 
     background-color: #ffffff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
 }
 
 
-.paging .paging__left{
+/* .paging .paging__left{
     display: flex;
     align-items: center;
     flex: 4;
-}
+} */
 
-.paging .paging__left .total__page{
+.total__page{
     display: flex;
     align-items: center;
     width: 150px;
     font-size: 13px;
     justify-content: space-around;
    }
-   .paging .paging__left .total__page div{
+.total__page div{
     display: flex;
    }
 
-.paging .paging__left .current__page{
+.current__page{
  display: flex;
  align-items: center;
  position: relative;
@@ -43,37 +42,12 @@
     height: 5px;
     margin-right: 12px;
 }
-.paging .paging__left .number__pages{
+.number__pages{
  display: flex;
  align-items: center;
  justify-content: space-around;
  width: 130px;
 }
-.paging .paging__left .number__pages .page__number button{
+.paging .number__pages .page__number button{
     background-color: #ffffff;
-}
-.paging .paging__right{
-    flex: 5;
-    display: flex;
-    height: 100%;
-    align-items: center;
-} 
-.paging .paging__right div{
-    font-size: 13;
-    font-weight: 700;
-}  
-.paging .paging__right  .paging__right--quantity{
-    flex: 2;
-}
-.paging .paging__right  .paging__right--price{
-    flex:1.7;
-}
-.paging .paging__right  .paging__right--accumulated{
-    flex:1.9;
-}
-.paging .paging__right  .paging__right--value{
-    flex:1.8;
-}
-.paging .paging__right  .paging__right--feature{
-    flex:1.4;
 }

@@ -2,6 +2,7 @@
     width: 100%;
     background-color: #f4f7ff;
     position: relative;
+    overflow-y: scroll;
 }
 
 .grid__table{
@@ -9,8 +10,8 @@
     margin-top: 25px;
     padding: 0px 14px 0px 20px;
     position: relative;
-    height: 820px;
-     overflow-y: scroll;
+    height: 857px;
+    overflow-y: scroll;
 }
 .toolbar{
     height: 36px;
