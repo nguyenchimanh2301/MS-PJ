@@ -6,43 +6,59 @@
                     <div class="box__text">MISA QLTS</div>
                 </div>
                  <div class="sidebar__box--menu">
-                    <div class="sidebar__box--icon">
+                    <div class="sidebar__box--icon" 
+                    :class="{'mouseover':mouseover,'sidebar__width':!isCollapse}" >
+                        <div class="tooltipSidebar" v-if="!isCollapse">Tổng quan</div>
                         <div class="box__icon box__icon--router"></div>
                         <div class="box__text">Tổng quan</div>
                     </div> 
-                    <div class="sidebar__box--icon">
+                    <div class="sidebar__box--icon"
+                    :class="{'mouseover':mouseover,'sidebar__width':!isCollapse}">
+                        <div class="tooltipSidebar" v-if="!isCollapse">Tài sản</div>
                         <div class="box__icon box__icon--car"></div>
                         <div class="box__text">Tài sản</div>
                         <div class="menu__dropdown" v-if="isCollapse"></div>
                     </div>
-                    <div class="sidebar__box--icon">
+                    <div class="sidebar__box--icon"
+                    :class="{'mouseover':mouseover,'sidebar__width':!isCollapse}">
+              
+                        <div class="tooltipSidebar" v-if="!isCollapse">Tài sản HT-DB</div>
                         <div class="box__icon box__icon--road"></div>
                        <div class="box__text">Tài sản HT-DB</div>
                        <div class="menu__dropdown" v-if="isCollapse"></div>
 
                     </div>
-                    <div class="sidebar__box--icon">
+                    <div class="sidebar__box--icon"
+                    :class="{'mouseover':mouseover,'sidebar__width':!isCollapse}">
+                  
+                        <div class="tooltipSidebar" v-if="!isCollapse">Công cụ dụng cụ</div>
                         <div class="box__icon box__icon--icon"></div>
                         <div class="box__text">Công cụ dụng cụ</div>
                         <div class="menu__dropdown" v-if="isCollapse"></div>
                     </div>
-                    <div class="sidebar__box--icon">
+                    <div class="sidebar__box--icon"
+                    :class="{'mouseover':mouseover,'sidebar__width':!isCollapse}" >
+                        <div class="tooltipSidebar" v-if="!isCollapse">Danh mục</div>
                         <div class="box__icon box__icon--book"></div>
                         <div class="box__text">Danh mục</div>
                     </div>
-                    <div class="sidebar__box--icon">
+                    <div class="sidebar__box--icon"
+                    :class="{'mouseover':mouseover,'sidebar__width':!isCollapse}">
+                        <div class="tooltipSidebar" v-if="!isCollapse">Tra cứu</div>
                         <div class="box__icon box__icon--search"></div>
                         <div class="box__text">Tra cứu</div>
                         <div class="menu__dropdown" v-if="isCollapse"></div>
                     </div>
-                    <div class="sidebar__box--icon">
+                    <div class="sidebar__box--icon "
+                    :class="{'sidebar__width':!isCollapse}">
+                        <div class="tooltipSidebar" v-if="!isCollapse">Báo cáo</div>
                         <div class="box__icon 
                         box__icon--chart"></div>
                     <div class="box__text">Báo cáo</div>
-                    
                     </div>
                  </div>
-                 <div class="sidebar-tongle">
+            </div>
+            <div class="sidebar-tongle">
                         <div id="sidebarToggle" class="sidebar__icon--tongle"  @click="collapseSidebar" v-if="isCollapse">
                             <div class="tooltip" >Thu gọn</div>
                         </div>
@@ -50,7 +66,6 @@
                             <div id="opensidebar" class="tooltip ">Mở rộng</div>
                         </div>
                  </div>
-            </div>
         </div>
 </template>
 
@@ -80,6 +95,7 @@
     data() {
         return {
             isCollapse : true,
+            mouseover : false,
         }
     },
     })

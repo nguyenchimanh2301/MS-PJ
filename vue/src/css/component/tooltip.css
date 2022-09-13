@@ -7,6 +7,16 @@
     border-radius: 4px;
     text-align: center;
 }
+.tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}
 .feature__icon-delete:hover .tooltip{
     display: block;
     position: absolute;
@@ -50,3 +60,34 @@
     width: 40px;
     height: 35px;
 }
+.tooltipSidebar{
+    display: none;
+    border: 1px solid rebeccapurple;
+    border-radius: 4px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    
+}
+.tooltipSidebar::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.sidebar__box--icon:hover .tooltipSidebar{
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-size: 12px;
+    align-items: center;
+    display: block;
+    background-color: white;
+    color: black;
+}
+

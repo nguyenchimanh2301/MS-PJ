@@ -60,6 +60,7 @@ width: 639px;
     width: 36px;
     height: 36px;
     justify-content: space-around;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .16);
 }
 .grid__option--feature{
     display: flex;

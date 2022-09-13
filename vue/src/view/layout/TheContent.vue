@@ -92,7 +92,7 @@
                 <td colspan="5" >
                   <div class="paging">
                     <div class="total__page">
-                        <div>Tổng số: <p>200 bản ghi</p> </div>
+                        <div>Tổng số: <p class="total">200 bản ghi</p> </div>
                     </div>
                     <div class="current__page">
                         <input type="text" value="20" id="txtCurentPage">
@@ -111,10 +111,10 @@
         
                 </div>
                 </td>
-                <td class="text-alain-right">13</td>
-                <td class="text-alain-right">249.000.000</td>
-                <td class="text-alain-right">19.716.000</td>
-                <td class="text-alain-right">229.284.000</td>
+                <td class="text-alain-right total">13</td>
+                <td class="text-alain-right total">249.000.000</td>
+                <td class="text-alain-right total">19.716.000</td>
+                <td class="text-alain-right total">229.284.000</td>
                 <td></td>
               </tr>
             </tfoot>

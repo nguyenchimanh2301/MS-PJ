@@ -77,18 +77,21 @@
             <div class="popup__footer">
                 <div class="popup__btn">
                     <button class="btn__disable" id="btnDisable" @click="btnClosePopup">HUỶ</button>
-                    <button class="btn">LƯU</button>
+                    <button class="btn" >LƯU</button>
                 </div>
             </div>
         </div>
     </div>
+    <MToastMessageVue v-show="isShowToast"/>
     </div>
 </template>
 
 <script>
+    import MToastMessageVue from './MToastMessage.vue';
     export default {
     name :"MPopup",
     components:{
+    MToastMessageVue,
 },
 props:["isShow","employeeSelected"],
 watch:{
@@ -100,12 +103,16 @@ watch:{
 methods: {
     btnClosePopup(){
         this.$emit("isShowPopup",false);
+    },
+    showToast(){
+        this.isShowToast = true;
     }
 },
 data() {
     return {
         isShowPopup : false,
         employeeSelect:{},
+        isShowToast: false,
     }
 },
 }
