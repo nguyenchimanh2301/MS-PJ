@@ -47,7 +47,6 @@
             <thead>
               <tr>
                 <th class="text-alain-center">
-                  <input type="checkbox" name="" id="" />
                 </th>
                 <th class="text-alain-left">STT</th>
                 <th class="text-alain-left">Mã tài sản</th>
@@ -67,7 +66,9 @@
                 @dblclick="employeeSelected(item)"
               >
                 <td class="text-alain-center">
+                <div class="checkbox__border">
                   <input type="checkbox" name="" id="" />
+                </div>
                 </td>
                 <td class="text-alain-left">1</td>
                 <td class="text-alain-left">{{ item.CustomerGroupId }}</td>
@@ -78,7 +79,7 @@
                 <td class="text-alain-right">{{ item.CreatedDate }}</td>
                 <td class="text-alain-right">{{ item.ModifiedDate }}</td>
                 <td class="text-alain-center">
-                  <button class="btn__pen" @click="btnShowPopup">
+                  <button class="btn__pen" @click="employeeSelected(item)">
                     <div class="tooltip">Sửa</div>
                   </button>
                   <button class="btn__td">
@@ -156,6 +157,7 @@ export default {
   methods: {
     btnShowPopup() {
       this.showPopup(true);
+      this.employee = {};
     },
     showPopup(isShow) {
       this.isShowPopup = isShow;

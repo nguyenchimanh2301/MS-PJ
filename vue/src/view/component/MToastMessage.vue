@@ -8,8 +8,8 @@
                 </div>
             </div>
             <div class="toast__btn">
-                <button class="btn__disable">Không</button>
-                <button class="btn">Hủy bỏ</button>
+                <button class="btn__disable" @click="closeToast()">Không</button>
+                <button class="btn" >Hủy bỏ</button>
             </div>
         </div>
 
@@ -55,3 +55,23 @@
 </div>
 
 </template>
+
+<script>
+   export default {
+    name :"MToast",
+    components:{
+},
+// props['isShowToast'];
+methods: {
+    closeToast(){
+        this.$emit('isCloseToast',false);
+    },
+},
+data() {
+    return {
+        isShowToast: true,
+    }
+},
+}
+    
+</script>

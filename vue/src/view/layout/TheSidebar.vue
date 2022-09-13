@@ -1,5 +1,6 @@
 <template>
    <div id="sidebar" class="sidebar">
+    <div class="sidebar__collapse">
             <div class="sidebar__box">
                 <div class="sidebar__box-home ">
                     <div class=" box__icon--home"></div>
@@ -58,6 +59,7 @@
                     </div>
                  </div>
             </div>
+        </div>
             <div class="sidebar-tongle">
                         <div id="sidebarToggle" class="sidebar__icon--tongle"  @click="collapseSidebar" v-if="isCollapse">
                             <div class="tooltip" >Thu gọn</div>
@@ -73,7 +75,7 @@
     export default({
     methods: {
         collapseSidebar(){
-            document.getElementById("sidebar").style.width = "85px";
+            document.getElementById("sidebar").style.width = "66px";
             var arr = Array.from(document.querySelectorAll(".box__text"));
             arr.map((item)=>{
                  item.style.display ='none';
@@ -81,7 +83,7 @@
             this.collapse(false);
         },
         openSidebar(){
-            document.getElementById("sidebar").style.width = "300px";
+            document.getElementById("sidebar").style.width = "225px";
             var arr = Array.from(document.querySelectorAll(".box__text"));
             arr.map((item)=>{
                  item.style.display ='block';

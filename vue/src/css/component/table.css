@@ -22,6 +22,23 @@ overflow: hidden;
     background-color: #ffffff;
     border: none;
     border-top: 1px solid #afafaf;
+    color: #001031;
+}
+.checkbox__border{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.checkbox__border:hover{
+  background-color: rgba(26, 164, 200, .2);
+}
+.table tbody td:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .table td{
@@ -35,34 +52,16 @@ overflow: hidden;
    background-color: rgba(26, 164, 200, .2) !important;
 }
 
-/* .table thead th{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-} */
 .table th:first-child{
  width: 42px;
 }
-/*
-
-.table th:nth-child(3){
-    width: 42px;
-}
-
-
-  /* Handle on hover */
-  /* ::-webkit-scrollbar-thumb:hover {
-    background: rgb(219, 192, 192); 
-  } */
-
   .table th:last-child{
     width: 100px;
 }
 .table th:nth-child(2){
     width: 42px;
 }
+
 
 tfoot tr {
     position: sticky;
@@ -71,3 +70,4 @@ tfoot tr {
     background-color: #ffffff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
 }
+

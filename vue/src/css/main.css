@@ -40,12 +40,7 @@
     position: relative;
 }
 
-.contain2{
-    height: 100%;
-    display: grid;
-    grid-template-columns: 66px auto;
-    transition: linear 2s;
-}
+
 .text-alain-center{
     text-align: center ;
 }

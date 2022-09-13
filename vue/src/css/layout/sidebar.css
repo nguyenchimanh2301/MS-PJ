@@ -2,20 +2,27 @@
   display: flex;
   background-color: #1c3048;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
-  width: 300px;
   height: 100%;
   transition: linear 0.5s;
   flex-direction: column;
+  flex-shrink: 66px;
+  width: 225px;
+}
+.sidebar .sidebar__collapse{
+  width: 100%;
+  height: 96vh;
+  width: 225px;
 }
 .sidebar__box {
   display: flex;
   flex-direction: column;
   height: 96vh;
   position: relative;
-  width: 85%;
+  width: 80%;
 }
 .sidebar__width{
   width: 40px;
+  
 }
 .sidebar__box-home {
   height: 50px;
@@ -98,7 +105,7 @@
   border-radius: 4px;
   transition: linear 0.5s;
   position: absolute;
-  right: 10px;
+  right: 20px;
   
 }
 .sidebar-tongle .sidebar__tongle--open{
@@ -109,7 +116,7 @@
   border-radius: 4px;
   transition: linear 0.5s;
   position: absolute;
-  right: 10px;
+  right: 20px;
 }
 
 /* .sidebar__tongle--open:active .contain{

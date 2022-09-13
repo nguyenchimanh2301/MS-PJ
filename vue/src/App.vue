@@ -1,5 +1,5 @@
 <template>
-   <div class="contain contains">
+   <div class="contain">
     <TheSidebar/>
     <TheContent/>
     <MPaging/>
